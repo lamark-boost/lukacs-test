@@ -1,0 +1,70 @@
+.footer {
+  background: var(--primary-color);
+  color: var(--text-overlay-color);
+  padding: 60px 0 75px;
+  margin-top: 40px;
+
+  a {
+    color: var(--text-overlay-color);
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap:20px;
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .logoWrap {
+      max-width: 150px;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .legalsWrap {
+      display: flex;
+      gap: 10px 20px;
+      font-size: 14px;
+      flex-wrap: wrap;
+      @media screen and (max-width: 550px) {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+
+  }
+
+  .socialsWrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    a {
+      display: block;
+      width: 20px;
+      height: 20px;
+      svg {
+        fill:var(--text-overlay-color);
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .flexer {
+    border-top: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:30px;
+    padding-top: 20px;
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

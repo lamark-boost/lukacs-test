@@ -1,0 +1,108 @@
+div#hero-2 {
+  position: relative;
+}
+.hero1 {
+  position: relative;
+  padding: 50px 0;
+  @media screen and (max-width: 600px) {
+    padding: 30px 0;
+  }
+
+  .flexer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    @media screen and (max-width: 700px) {
+      padding: 30px 0;
+    }
+  }
+  .content {
+    flex:1;
+    .subhead {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-family: var(--heading-font);
+    }
+    .headline {
+      line-height: 1.1;
+      font-size: 56px;
+      margin: 0 auto 25px;
+      max-width: 70%;
+      font-family: var(--heading-font);
+
+      @media screen and (max-width: 1024px) {
+        font-size: 48px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+        max-width: 85%;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 36px;
+        max-width: unset;
+      }
+    }
+    .support {
+      font-size: 20px;
+      line-height: 1.35;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .supportList {
+      font-size: 19px;
+      line-height: 1.35;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .ctaWrap {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+
+      a.btn {
+        min-width: 72px;
+        min-height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--secondary-color);
+        padding: 15px 20px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.1;
+        text-decoration: none;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .imgWrap {
+    width: unset;
+    height: unset;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(0.65);
+
+    .primaryImg {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

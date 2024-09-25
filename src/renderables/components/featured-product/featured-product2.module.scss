@@ -1,0 +1,128 @@
+.featuredProduct {
+  padding: 30px 0;
+  height: 675px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media screen and (max-width: 759px) {
+    height:unset;
+  }
+
+  .flexer {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    position: relative;
+    z-index: 10;
+    @media screen and (max-width: 759px) {
+      flex-direction:column;
+    }
+  }
+  .content {
+    flex: 1;
+    @media screen and (max-width: 759px) {
+      text-align:center;
+    }
+    .subhead {
+      font-size: 17px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    .headline {
+      line-height: 1.1;
+      font-size: 56px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      font-family: var(--heading-font);
+      @media screen and (max-width: 759px) {
+        font-size: 48px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 36px;
+      }
+    }
+    .support-copy {
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .ctaWrap {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      @media screen and (max-width: 759px) {
+        justify-content: center;
+      }
+      a.btn {
+        min-width: 72px;
+        min-height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--secondary-color);
+        padding: 15px 20px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.1;
+        text-decoration: none;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .imgWrap {
+    width: 575px;
+    height: 525px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    @media screen and (max-width: 1200px) {
+      width:475px;
+    }
+    @media screen and (max-width: 850px) {
+      width:400px;
+      height:400px;
+    }
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      height: unset;
+    }
+  }
+  .primaryImg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    @media screen and (max-width: 450px) {
+      object-fit: unset;
+      height: auto;
+    }
+  }
+  .bgWrap {
+    opacity: 0.4;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    border-radius: 0;
+    content: '';
+    background-color: var(--primary-color);
+
+
+    @media screen and (max-width: 1200px) {
+      left:0;
+    }
+    @media screen and (max-width: 759px) {
+      left:0;
+      border-radius: 0;
+    }
+  }
+
+
+}
+
+
+
+

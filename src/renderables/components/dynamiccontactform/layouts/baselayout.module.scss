@@ -1,0 +1,110 @@
+.button {
+    background: var(--secondary-color);
+    padding: 15px 45px;
+    color: var(--white-text-color);
+    text-align: center;
+    line-height: 1.1;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border: 0;
+  
+  }
+  .hiddenDiv {
+    display: none;
+  }
+  .submitWrap {
+    text-align: center;
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
+  .copyright a {
+    color: var(--primary-color);
+  }
+  
+  .flex {
+    display: flex;
+    gap: 14px;
+    align-items: flex-end;
+  
+    @media screen and (max-width: 991px) {
+      .flexitem {
+        width: 100%;
+      }
+      flex-direction: column;
+    }
+  }
+  
+  .flexWrap {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+
+  }
+  
+  .flexitem {
+    width: calc(50% - 7px);
+    ::placeholder {
+      color: #000;
+      opacity: 1;
+    }
+  }
+  
+  .flexitemfull {
+    width: 100%;
+    ::placeholder {
+      color: #000;
+      opacity: 1;
+    }
+  }
+  
+  .flex input, .flex textarea{
+    width: 100%;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    appearance: none;
+    font-family: var(--base-font);
+    color:#000;
+  }
+
+  .flex textarea {
+    font-size: 0.85em;
+  }
+
+  .flex select {
+    width: 100%;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    appearance: none;
+    font-family: var(--base-font);
+    color:#000;
+    appearance: none;
+    background-image: url(/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+    padding-right: 30px;
+  }
+
+  .flex input[type="hidden"] {
+    display: none;
+  }
+  .flex textarea {
+    height: 100px;
+  }
+  
+  .flex label {
+    font-size: 0.8em;
+  }
+
+  .flex .hiddenLabel label {
+    display: none;
+  }
+  

@@ -1,0 +1,94 @@
+
+.hero1 {
+  padding: 50px 0;
+  background: var(--primary-tint-color);
+  @media screen and (max-width: 600px) {
+    padding: 30px 0;
+  }
+
+  .flexer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+      gap:20px;
+    }
+  }
+  .content {
+    flex:1;
+    .subhead {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-family: var(--heading-font);
+    }
+    .headline {
+      line-height: 1.1;
+      font-size: 56px;
+      margin-bottom: 25px;
+      margin-top: 0;
+      font-family: var(--heading-font);
+
+      @media screen and (max-width: 1024px) {
+        font-size: 48px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+    .support {
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .supportList {
+      font-size: 17px;
+      line-height: 1.35;
+      padding-left: 20px;
+    }
+
+    .ctaWrap {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+
+      a.btn {
+        min-width: 72px;
+        min-height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--secondary-color);
+        padding: 15px 20px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.1;
+        text-decoration: none;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .imgWrap {
+    width: 50%;
+    height: 585px;
+    @media screen and (max-width: 1024px) {
+      height: 460px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      height: unset;
+    }
+    .primaryImg {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      @media screen and (max-width: 600px) {
+        object-fit: unset;
+        height: auto;
+      }
+    }
+  }
+}

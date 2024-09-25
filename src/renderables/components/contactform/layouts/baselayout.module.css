@@ -1,0 +1,27 @@
+.button {
+    background: var(--secondary-color);
+    padding: 15px 45px;
+    color: var(--white-text-color);
+    text-align: center;
+    line-height: 1.1;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border: 0;
+
+}
+
+.submitWrap {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.copyright a {
+    color: var(--primary-color);
+}
+

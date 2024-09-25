@@ -1,0 +1,80 @@
+.button {
+  background: var(--primary-color);
+  padding: 15px 45px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.1;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.submitWrap {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.copyright a {
+  color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+  gap: 14px;
+
+  @media screen and (max-width: 991px) {
+    .flexitem {
+      width: 100%;
+    }
+    flex-direction: column;
+  }
+}
+
+.flexWrap {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.flexitem {
+  width: calc(50% - 7px);
+  ::placeholder {
+    color: #000;
+    opacity: 1;
+  }
+}
+
+.flexitemfull {
+  width: 100%;
+  ::placeholder {
+    color: #000;
+    opacity: 1;
+  }
+}
+.hiddenDiv {
+  display: none;
+}
+.flex input, .flex textarea{
+  width: 100%;
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  appearance: none;
+  font-family: var(--base-font);
+  color:#000;
+}
+
+.flex textarea {
+  height: 100px;
+}
+
+.flex label {
+  display: none;
+}

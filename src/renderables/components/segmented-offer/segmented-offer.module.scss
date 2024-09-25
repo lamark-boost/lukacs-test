@@ -1,0 +1,112 @@
+.segofferSection {
+  padding: 40px 0;
+
+  @media screen and (max-width: 550px) {
+    padding: 0;
+  }
+
+  .outerFlexer {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+
+  .content {
+    width: 650px;
+    height: 675px;
+    border-radius: 12px;
+    background: var(--secondary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    @media screen and (max-width: 1200px) {
+      width: 475px;
+      height: 525px;
+    }
+    @media screen and (max-width: 991px) {
+      width: 375px;
+      height: auto;
+      min-height: 500px;
+    }
+    @media screen and (max-width: 550px) {
+      border-radius: 0!important;
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    .contentInner {
+      text-align: center;
+    }
+    .subhead {
+      color: var(--secondary-color);
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+    .headline {
+      font-size: 56px;
+      line-height: 1.1;
+      font-weight: 600;
+      font-family: var(--heading-font);
+      margin-bottom: 20px;
+      @media screen and (max-width: 1024px) {
+        font-size: 48px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+    .supportCopy {
+
+    }
+    .ctaWrap {
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: 1200px) {
+        margin-top: 30px;
+      }
+
+      .btn {
+        min-width: 72px;
+        min-height: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--secondary-color);
+        padding: 15px 20px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.1;
+        text-decoration: none;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .imgWrap {
+    padding: 50px 0;
+    flex: 1;
+    @media screen and (max-width: 750px) {
+      &:first-of-type {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      padding: 0;
+      &:first-of-type {
+        display: block;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
